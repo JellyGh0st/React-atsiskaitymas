@@ -4,60 +4,63 @@
          "id": 1,
          "userName": "Pempe",
          "password": 123,
+         "role": "user",
+         "isBlocked": false,
          "email": "pempe@bravo.lt",
-         "userPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Northern-Lapwing-Vanellus-vanellus.jpg/1920px-Northern-Lapwing-Vanellus-vanellus.jpg"
+         "avatarURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Northern-Lapwing-Vanellus-vanellus.jpg/1920px-Northern-Lapwing-Vanellus-vanellus.jpg"
       },
       {
          "id": 2,
          "userName": "Dzeisonas",
+         "role": "admin",
          "password": 123,
+         "isBlocked": false,
          "email": "json@bravo.lt",
-         "userPhoto": "https://static.wikia.nocookie.net/fridaythe13th/images/8/8e/JBOX6.png/revision/latest?cb=20210617194843"
+         "avatarURL": "https://www.looper.com/img/gallery/this-is-what-jason-from-friday-the-13th-was-almost-named/intro-1622299712.jpg"
       },
       {
          "id": 3,
          "userName": "Utele",
          "password": 123,
+         "role": "user",
+         "isBlocked": false,
          "email": "utele@bravo.lt",
-         "userPhoto": "https://hips.hearstapps.com/hmg-prod/images/praying-mantis-amazing-insects-1595937972.jpg?crop=1.00xw:0.751xh;0,0.227xh&resize=1200:*"
+         "avatarURL": "https://hips.hearstapps.com/hmg-prod/images/praying-mantis-amazing-insects-1595937972.jpg?crop=1.00xw:0.751xh;0,0.227xh&resize=1200:*"
       },
       {
          "id": 4,
          "userName": "NoobDev",
          "password": 123,
+         "role": "user",
+         "isBlocked": false,
          "email": "bukas@bravo.lt",
-         "userPhoto": "https://kinfo.lt/wp-content/uploads/2015/01/Jim-Carrey-Dumband-Dumber.jpg"
+         "avatarURL": "https://kinfo.lt/wp-content/uploads/2015/01/Jim-Carrey-Dumband-Dumber.jpg"
       }
    ],
    "posts": [
       {
          "id": 1,
          "userId": 4,
-         "userName": "NoobDev",
          "title": "kodėl neveikia react appas?"
       },
       {
          "id": 2,
          "userId": 3 ,
-         "userName": "Utele",
          "title": "Nu tu ir durnas, reactas ne tau!"
       },
       {
          "id": 3,
          "userId": 4,
-         "userName": "NoobDev",
          "title": "Čia kur suvesti? Į terminalą?"
       },
       {
          "id": 4,
          "userId": 1,
-         "userName": "Pempe",
          "title": "Aš tai visai ne prie ko"
       },
       {
          "id": 5,
          "userId": 2,
-         "userName": "Dzeisonas",
          "title": "Jūs jau mirę, tik dar to nesuprantat"
       }
    ]

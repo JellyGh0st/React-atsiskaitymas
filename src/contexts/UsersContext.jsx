@@ -3,7 +3,7 @@ import { createContext, useReducer, useEffect, useState } from "react";
 const UsersContext = createContext();
 const UsersActionTypes = {
    get: 'get_all_users'
-}
+};
 
 const reducer = (state, action) => {
    switch(action.type){
@@ -12,9 +12,9 @@ const reducer = (state, action) => {
       default:
          return state;
    }
-}
+};
 
-const UserProvider = ({children}) => {
+const UsersProvider = ({children}) => {
 
    const [users, setUsers] = useReducer(reducer, []);
    const [currentUser, setCurrentUser] = useState(null);
@@ -31,6 +31,11 @@ const UserProvider = ({children}) => {
    return ( 
       <UsersContext.Provider
          value={{
+            users,
+            setUsers,
+            UsersActionTypes,
+            currentUser,
+            setCurrentUser
 
          }}   
       >
@@ -39,5 +44,5 @@ const UserProvider = ({children}) => {
     );
 }
  
-export {UserProvider} ;
-export default UserContext;
+export { UsersProvider } ;
+export default UsersContext;
