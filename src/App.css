@@ -39,7 +39,14 @@ main {
    flex-grow: 1;
    padding: 30px;
  }
- 
+ /* Hero main */
+
+ .hero-main {
+   display: flex;
+   justify-content: center;
+   height: 55vh;
+ }
+
  /* Login main */
 
  .login-main {

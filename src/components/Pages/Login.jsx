@@ -1,12 +1,18 @@
 import { useState, useContext} from 'react';
 import UsersContext from '../../contexts/UsersContext';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Login = () => {
+
+   const navigate = useNavigate();
 
    const [formInputs, setFormInputs] =  useState({
       userName: '',
       password: ''
    });
+   const [failedLogIn, setFailedLogin] = useState(false);
 
    const { users, setCurrentUser} = useContext(UsersContext);
 
@@ -19,6 +25,16 @@ const Login = () => {
 
    const formSubmit = e => {
       e.preventDefault();
+      const loggedInUser = users.find(user => user.userName ===
+         formInputs.userName && user.password === formInputs.password);
+
+         if(loggedInUser){
+            setCurrentUser(loggedInUser);
+            navigate('/home');
+         } else {
+            setFailedLogin(true);
+
+         }
    }
    return ( 
       <main className="login-main">
@@ -44,6 +60,15 @@ const Login = () => {
             </div>
             <input type="submit" value="Log In" />
          </form>
+         {
+            failedLogIn &&
+               <h2
+               style={{ color:'red'}}
+               >
+                  Neteisingi duomenys
+
+               </h2> 
+         }
       </main>
     );
 }
