@@ -15,7 +15,7 @@ const reducer = (state, action) => {
 };
 
 const PostsProvider = ({ children }) => {
-  
+
   const [posts, setPosts] = useReducer(reducer, []);
 
   useEffect(() => {
@@ -33,8 +33,8 @@ const PostsProvider = ({ children }) => {
    <PostsContext.Provider
       value={{
         posts,
-		  setPosts,
-		  PostsActionTypes
+		    setPosts,
+		    PostsActionTypes
       }}
    >
       {children}

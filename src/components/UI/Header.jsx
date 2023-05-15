@@ -1,13 +1,13 @@
+
 const Header = () => {
    return (
       <header>
-         <div>
-            NEZINAUKADARAU
+         <div className='logo'>
+            LOGO
          </div>
          <div className="userInfo">
-            <ul>
-               <li></li>
-            </ul>
+            <button>Login</button>
+            <button>Register</button>
          </div>
       </header>
    );

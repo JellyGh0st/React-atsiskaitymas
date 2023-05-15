@@ -1,11 +1,11 @@
-const Post = () => {
+const Post = ({data}) => {
    return ( 
-   <div>
+   <div className="postCard">
       <div>
-         User
+         <h4>{data.userName}</h4>
       </div>
       <div>
-         tekstas
+         <p>{data.title}</p>
       </div>
    </div>  );
 }
