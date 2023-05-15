@@ -1,6 +1,5 @@
 body {
-  
-   min-height: 100vh;
+   height: 100vh;
    display: flex;
    flex-direction: column;
  }
@@ -17,7 +16,7 @@ body {
    font-weight: 900;
  }
 
- /* main */
+ /* Home main */
 
 .postCard {
    border: 1px solid gray;
@@ -36,11 +35,36 @@ h5 {
    margin: 2px
 }
 
- main {
+main {
    flex-grow: 1;
    padding: 30px;
  }
  
+ /* Login main */
+
+ .login-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 435px;
+
+}
+
+.login-main div{
+   display: flex;
+   justify-content: space-between;
+}
+
+.login-main form {
+   display: flex;
+  flex-direction: column;
+  gap: 2px
+}
+
+
+
+
+
 /* Footer  */
 
  footer {

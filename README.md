@@ -12,7 +12,7 @@ you'll have to have nmp installed and open terminal to run command "npm install"
 
 ### `3 step`
 
-In bash terminal direct to 'react-atsiskaitymas' folder you copied by the help of cd command (example:
+In react-app terminal direct to 'react-atsiskaitymas' folder you copied by the help of cd command (example:
 cd REACT/react-atsiskaitymas ).
 Then type: 'npm start'.
 This runs the app in the development mode.\
@@ -20,5 +20,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `4 step`
 
-Open separate terminal and run commnand: "npm run json". This loads json server.
+Open separate json-watch terminal run commnand: "npm run json". This loads json server.
 

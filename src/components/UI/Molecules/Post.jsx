@@ -6,6 +6,7 @@ const Post = ({data}) => {
 
    const {users} = useContext(UsersContext);
    const user = users.find(el => el.id === data.userId);
+   
    return ( 
    <div className="postCard">
       { users.length ?
