@@ -2,9 +2,10 @@ import { useContext } from "react";
 import PostsContext from "../../contexts/PostsContext";
 import Post from "../UI/Molecules/Post";
 
-const Posts = () => {
+const Home = () => {
 
    const {posts} = useContext(PostsContext);
+   
    return ( 
       <main>
          <h1>Chat</h1>
@@ -22,4 +23,4 @@ const Posts = () => {
    );
 }
  
-export default Posts;
+export default Home;

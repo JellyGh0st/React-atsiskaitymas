@@ -1,13 +1,19 @@
 import './App.css';
+import 'normalize.css';
 import { Routes, Route} from 'react-router-dom';
 import Header from './components/UI/Header';
-import Posts from './components/Pages/Posts';
+import Home from './components/Pages/Home';
+import Footer from './components/UI/Footer';
 
 function App() {
   return (
   <>
-  <Header/>
-  
+    <Header/>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      
+    </Routes>
+    <Footer/>
   </>
   );
 }

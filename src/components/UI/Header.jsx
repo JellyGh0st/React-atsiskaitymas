@@ -2,10 +2,12 @@ const Header = () => {
    return (
       <header>
          <div>
-            BANDZOO
+            NEZINAUKADARAU
          </div>
          <div className="userInfo">
-            user
+            <ul>
+               <li></li>
+            </ul>
          </div>
       </header>
    );
